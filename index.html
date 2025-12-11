@@ -7,6 +7,9 @@
     <meta name="author" content="Caitlin Deer">
     <title>What's in Your Drawer?</title>
 
+    <!-- website icon -->
+    <link rel="icon" type="image/svg+xml" href="images/fork-knife.svg">
+
    <!-- Bootstrap v5.3.7 -->
    <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">        
@@ -17,7 +20,7 @@
   </head>
   <body>
 <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4">
                 <a class="navbar-brand" href="#page-top">What's in Your Drawer?</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -34,6 +37,22 @@
                 </div>
             </div>
         </nav>
+<!-- opening carousel-->
+              <section id="carousel-section">
+              <div id="carouselslide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/flat.jpeg" class="d-block w-100" alt="forks, knives and spoons laying flat on a table">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/pink.png" class="d-block w-100" alt="pink and red handles on varying utensils inside a drawer">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/table.png" class="d-block w-100" alt="bright and colorful table set with fruit and utensils">
+                  </div>
+                </div>
+              </div>
+            </section>
 <!-- Fork division-->
 <section id="forks">
             <div class="container px-4">
@@ -41,11 +60,58 @@
                     <div class="col-lg-8">
                         <h2>Forks</h2>
                         <p class="lead">The best there is, a personal favorite of mine, forks. Universally known as the most American utensil, forks are solid, reliable, and always there for you. The anatomy of a fork</p>
-                        <ul>
-                             <li>The anatomy of a fork</li>
-                            <li>Popular foods to eat with forks!</li>
-                            <li>Caitlin's ease of eatability rating: </li>
-                        </ul>
+            <!-- accordian fork -->
+                          <div class="accordion" id="accordionExample1">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne1"> 
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                  The anatomy of a fork
+                                </button>
+                              </h2>
+                              <div id="collapseOne1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>Most come with 4 prongs at the end, but if you're super fancy you could get one with 2 or 3!</li>
+                                    <li>A long smooth stem, some thick and some thin</li>
+                                    <li> And the best have a great, heavy weight to them!</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                                  Popular foods to eat with forks!
+                                </button>
+                              </h2>
+                              <div id="collapseTwo1" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <ul>
+                                      <li> Salads </li>
+                                        <li> Steak </li>
+                                          <li> Pasta </li>
+                                            <li> Scrambled Eggs </li>
+                                              <li> Roasted vegetbales </li>
+                                      </ul> 
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+                                  Caitlin's ease of eatability rating:
+                                </button>
+                              </h2>
+                              <div id="collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                  Personally, I would give forks a 8/10. They are incredibly dependable, and found at most resturants. Yay forks!
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                <!-- end accordian -->
                     </div>
                 </div>
             </div>
@@ -57,11 +123,56 @@
                     <div class="col-lg-8">
                         <h2>Spoons</h2>
                         <p class="lead">This utensil is a league of its own, the spoon dominates the soup field. Perfectly shaped, these little guys are mini bowls just waiting to bring the party to your mouth!</p>
-                        <ul>
-                             <li>The anatomy of a spoon:</li>
-                            <li>Popular foods to eat with spoons!</li>
-                            <li>Caitlin's ease of eatability rating: </li>
-                        </ul>
+            <!-- accordian spoon -->
+                          <div class="accordion" id="accordionExample2">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                  The anatomy of a spoon
+                                </button>
+                              </h2>
+                              <div id="collapseOne2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>A circular, bowl shaped bottom</li>
+                                    <li>One long smooth stem (just like a fork!)</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                  Popular foods to eat with spoons!
+                                </button>
+                              </h2>
+                              <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>Soup</li>
+                                    <li>Mac n Cheese</li>
+                                    <li>Corn Chowder</li>
+                                    <li>Chili</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                  Caitlin's ease of eatability rating:
+                                </button>
+                              </h2>
+                              <div id="collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                  Spoons put up a good fight, but they aren't a stand out for me. For them, they'll get a 6/10. Better luck next time guys, maybe try to expand your palette a bit more!
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+            <!-- end accordian -->
                     </div>
                 </div>
             </div>
@@ -72,12 +183,58 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Knives</h2>
-                        <p class="lead">Hellooooo danger! Knives are fierce, pointy, and cut your food with ease(most of the time). When you’re handed a knife you can’t help but get excited for what you’re ‘bout to eat, because I mean if a steak is calling, the knife is coming too.</p>
-                        <ul>
-                             <li>The anatomy of a knife:</li>
-                            <li>Popular foods to eat with knives!</li>
-                            <li>Caitlin's ease of eatability rating: </li>
-                        </ul>
+                        <p class="lead">Hellooooo danger! Knives are fierce, pointy, and cut your food with ease (most of the time). When you’re handed a knife you can’t help but get excited for what you’re ‘bout to eat, because I mean if a steak is calling, the knife is coming too.</p>
+                <!-- accordian knife -->
+                            <div class="accordion" id="accordionExample3">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne3">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                                    The anatomy of a knife
+                                  </button>
+                                </h2>
+                                <div id="collapseOne3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample3">
+                                  <div class="accordion-body">
+                                     <ul>
+                                    <li>Pointy end (unless its a butter knife!)</li>
+                                    <li>Serrated or smooth edge</li>
+                                    <li>Thick handle, with a good weight to it</li>
+                                  </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo3">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+                                    Popular foods to eat with knives!
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo3" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                  <div class="accordion-body">
+                                    <ul>
+                                    <li>A good old fashioned steak!</li>
+                                    <li>Fish</li>
+                                    <li>Fruit</li>
+                                    <li>Corn on the cob</li>
+                                  </ul>
+                                 </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree3">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                    Caitlin's ease of eatability rating:
+                                  </button>
+                                </h2>
+                                <div id="collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                  <div class="accordion-body">
+                                    Now, while I do love a good knife, they are going to get a 4/10 in my book. While they get the job done, they just don't stick out to me.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+              <!-- end accordian -->
                     </div>
                 </div>
             </div>
@@ -89,11 +246,57 @@
                     <div class="col-lg-8">
                         <h2>Chopsticks</h2>
                         <p class="lead">Ohhh you know what time it is! Chopsticks are that utensil - they are fun, fresh, and let you know which of your friends don’t have a refined food palette. While they give me hand cramps sometimes, these things are a fun time!</p>
-                        <ul>
-                             <li>The anatomy of chopsticks:</li>
-                            <li>Popular foods to eat with chopsticks!</li>
-                            <li>Caitlin's ease of eatability rating: </li>
-                        </ul>
+                <!-- accordian chopsticks -->
+                            <div class="accordion" id="accordionExample4">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne4">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                                    The anatomy of chopsticks
+                                  </button>
+                                </h2>
+                                <div id="collapseOne4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample4">
+                                  <div class="accordion-body">
+                                    <ul>
+                                    <li>Two long, identical sticks</li>
+                                    <li>One thin end</li>
+                                    <li>One thicker end</li>
+                                  </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo4">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+                                    Popular foods to eat with chopsticks!
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo4" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                  <div class="accordion-body">
+                                     <ul>
+                                    <li>Ramen</li>
+                                    <li>Udon</li>
+                                    <li>Sushi</li>
+                                    <li>Dumplings</li>
+                                   </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree4">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                                    Caitlin's ease of eatability rating:
+                                  </button>
+                                </h2>
+                                <div id="collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                  <div class="accordion-body">
+                                    WOW! Chopsticks are fun, fresh, and a good time... well for most people. I will have to give them a 6/10, just because I know there are better options out there!
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                <!-- end accordian -->
                     </div>
                 </div>
             </div>
@@ -105,11 +308,58 @@
                     <div class="col-lg-8">
                         <h2>Fingers</h2>
                         <p class="lead">Yeah, old reliable made the list, fingers are the BOMB! They come with you everywhere, can mimic any utensil, and are used as a utensil in every culture (don’t fact check me please!). They made this list, and a spot in my heart.</p>
-                        <ul>
-                             <li>The anatomy of fingers:</li>
-                            <li>Popular foods to eat with fingers!</li>
-                            <li>Caitlin's ease of eatability rating: </li>
-                        </ul>
+                <!-- accordian fingers -->
+                            <div class="accordion" id="accordionExample5">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne5">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5">
+                                    The anatomy of fingers
+                                  </button>
+                                </h2>
+                                <div id="collapseOne5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample5">
+                                  <div class="accordion-body">
+                                    <p>Well, I'd imagine that you know what fingers look like. However, I'll give you a quick rundown incase you're not familiar.</p>
+                                     <ul>
+                                    <li>One palm (flat, rough, somtimes smooth!)</li>
+                                    <li>Around 5 fingers</li>
+                                    <li>Fingernails at the end of each finger</li>
+                                  </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo5">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                                    Popular foods to eat with fingers!
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo5" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                                  <div class="accordion-body">
+                                     <ul>
+                                    <li>Hamburger</li>
+                                    <li>Fries</li>
+                                    <li>Chicken tenders</li>
+                                    <li>Pizza</li>
+                                  </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree5">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                                    Caitlin's ease of eatability rating:
+                                  </button>
+                                </h2>
+                                <div id="collapseThree5" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                                  <div class="accordion-body">
+                                    These take the CAKE! Fingers are the best utensil out there, mark my words. 10/10 everytime for these little guys. Wow do they get the job done!
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                <!-- end accordian -->
                     </div>
                 </div>
             </div>
@@ -121,6 +371,14 @@
                     <div class="col-lg-8">
                         <h2>Freestyle!</h2>
                         <p class="lead">Soooo, there's a lot of other utensils out there, some good, some bad. Here’s a quick shout out to some other great ways to get some food in your mouth!</p>
+                         <ul>
+                            <li>Spork</li>
+                            <li>Oyster Fork</li>
+                            <li>Ladle</li>
+                            <li>Tongs</li>
+                            <li>Spatuala (for licking bowls clean only)</li>
+                            <li>Mouth only</li>
+                        </ul>
                     </div>
                 </div>
             </div>
