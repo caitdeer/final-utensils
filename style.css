@@ -1,8 +1,92 @@
 /* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
 #mainNav {
-  background-color: #000;
+  background-color: skyblue;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+  color: black !important; 
+}
+
+#mainNav .nav-link:hover {
+  color: #000000;  
 }
 
 body {
-  padding-top: 70px; 
+  font-family: Verdana, sans-serif;
+  color: black;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+#carouselslide {
+  width: 360px;       
+  height: 360px;
+  margin: 1.5rem auto; 
+  border: 8px dashed skyblue; 
+  border-radius: 18px;
+  overflow: hidden;   
+}
+
+#carousel-section {
+  background-color: #ffe8e8; 
+  padding-top: 70px;
+}
+
+#carouselslide .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+#carouselslide .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  display: block;
+}
+
+section {
+  border: 6px solid skyblue;      
+  box-sizing: border-box;
+}
+
+#forks {
+  background-color: #f8e8ff; 
+  padding: 60px 0;
+}
+
+#spoons {
+  background-color: #e8faff; 
+  padding: 60px 0;
+}
+
+#knives {
+  background-color: #fff5e1; 
+  padding: 60px 0;
+}
+
+#chopsticks {
+  background-color: #eaffea; 
+  padding: 60px 0;
+}
+
+#fingers {
+  background-color: #fff0f0; 
+  padding: 60px 0;
+}
+
+#freestyle {
+  background-color: #f4f4ff; 
+  padding: 60px 0;
+}
+
+
+
+
